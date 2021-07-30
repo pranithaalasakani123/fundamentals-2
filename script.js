@@ -25,7 +25,7 @@ const appleJuice = fruitProcessor(5, 0);
 console.log(appleJuice);
 const appleOrangeJuice = fruitProcessor(2, 4);
 console.log(appleOrangeJuice);
-*/
+
 // function declaration
 
 function calAge1(birthyear) {
@@ -45,3 +45,11 @@ const calAge2 = function (birthyear) {
 const age2 = calAge2(2001);
 
 console.log(age1, age2);
+*/
+
+// Arrow function
+
+const calAge3 = birthyear => 2037 - birthyear;
+const age3 = calAge3(2001);
+console.log(age3);
+
