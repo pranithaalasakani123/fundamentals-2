@@ -49,7 +49,22 @@ console.log(age1, age2);
 
 // Arrow function
 
-const calAge3 = birthyear => 2037 - birthyear;
-const age3 = calAge3(2001);
-console.log(age3);
+// const calAge3 = birthyear => 2037 - birthyear;
+// const age3 = calAge3(2001);
+// console.log(age3);
 
+
+const machine = function (fruit) {
+    return fruit * 4;
+}
+
+
+function fruitProcessor(apples, oranges) {
+    const applePieces = machine(apples);
+    const orangepieces = machine(oranges);
+
+    const juice = `Juice with ${applePieces} apples and ${orangepieces} oranges.`;
+    return juice;
+}
+
+console.log(fruitProcessor(2, 3));
